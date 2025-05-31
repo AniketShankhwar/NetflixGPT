@@ -8,4 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    outDir: 'build'   // ← tell Vite to emit into your Firebase “build” folder
+  }
 })
