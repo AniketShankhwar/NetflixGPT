@@ -5,6 +5,7 @@ const MovieCard = ({posterPath}) => {
   return (
   <div className="w-28 md:w-48">
     <img
+      className="rounded-2xl"
       alt="Movie Card"
       src={IMG_CDN_URL + posterPath}
     />

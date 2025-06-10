@@ -12,11 +12,16 @@ const GptSearchBar = () => {
 
   // Search movie in TMDB
   const searchMovieTMDB = async (movie) => {
-    const data = await fetch('https://api.themoviedb.org/3/search/movie?query='+movie+'&include_adult=false&page=1', API_OPTIONS);
+    const data = await fetch(
+      "https://api.themoviedb.org/3/search/movie?query=" +
+        movie +
+        "&include_adult=false&page=1",
+      API_OPTIONS
+    );
 
-    const json = await data.json()
+    const json = await data.json();
     return json.results;
-  }
+  };
 
   const handleGptSearchClick = async () => {
     console.log(searchText.current.value);
@@ -40,11 +45,16 @@ const GptSearchBar = () => {
 
     console.log(tmdbResults);
 
-    dispatch(addGptMovieResult({movieNames: gptMoviesName, movieResults: tmdbResults}));
+    dispatch(
+      addGptMovieResult({
+        movieNames: gptMoviesName,
+        movieResults: tmdbResults,
+      })
+    );
   };
 
   return (
-    <div className="pt-[45%] md:pt-[5%] flex justify-center">
+    <div className="pt-[45%] md:pt-[12%] lg:pt-[5%] flex justify-center">
       <form
         className="w-6/7 md:w-1/2 bg-black/50 grid grid-cols-12 rounded-lg"
         onSubmit={(e) => e.preventDefault()}
