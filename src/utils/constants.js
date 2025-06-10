@@ -1,4 +1,4 @@
-export const LOGO = "../public/logo.png"
+export const LOGO = "/logo.png"
 
 export const USER_AVATAR =
   "https://i.pinimg.com/736x/92/b4/e7/92b4e7c57de1b5e1e8c5e883fd915450.jpg";
