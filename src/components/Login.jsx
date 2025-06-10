@@ -113,7 +113,7 @@ const Login = () => {
           }}
           className="bg-black/70 p-8 rounded-lg space-y-6 w-full max-w-md text-white z-10"
         >
-          <h1 className="text-3xl font-bold text-center">
+          <h1 className="text-2xl md:text-3xl font-bold text-center">
             {isSignInForm ? "Sign In" : "Sign Up"}
           </h1>
 

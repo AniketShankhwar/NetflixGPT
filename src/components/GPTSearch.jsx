@@ -1,6 +1,6 @@
-import GptSearchBar from './GptSearchBar'
-import GptMovieSuggestions from './GptMovieSuggestions'
-import { BG_URL } from '../utils/constants'
+import GptSearchBar from "./GptSearchBar";
+import GptMovieSuggestions from "./GptMovieSuggestions";
+import { BG_URL } from "../utils/constants";
 
 const GPTSearch = () => {
   return (
@@ -12,10 +12,12 @@ const GPTSearch = () => {
           className="w-full h-full object-cover "
         />
       </div>
-      <GptSearchBar/>
-      <GptMovieSuggestions/>
+      <div>
+        <GptSearchBar />
+        <GptMovieSuggestions />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default GPTSearch
+export default GPTSearch;

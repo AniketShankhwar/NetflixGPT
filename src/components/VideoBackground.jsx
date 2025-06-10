@@ -7,14 +7,13 @@ const VideoBackground = ({ movieId }) => {
   useMovieTrailer({ movieId });
 
   return (
-    <div className="w-screen">
+    <div className="w-screen pt-[30%] bg-black md:pt-0">
       <iframe
         className="w-screen aspect-video"
         src={
           `https://www.youtube.com/embed/${trailerVideo?.key}` +
           `?autoplay=1&mute=1&loop=1&playlist=${trailerVideo?.key}`
         }
-        title="Nothing New - Fly By Midnight (Official Lyric Video)"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       ></iframe>
     </div>
