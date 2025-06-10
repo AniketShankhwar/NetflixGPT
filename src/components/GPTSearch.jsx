@@ -1,4 +1,3 @@
-import React from 'react'
 import GptSearchBar from './GptSearchBar'
 import GptMovieSuggestions from './GptMovieSuggestions'
 import { BG_URL } from '../utils/constants'
@@ -6,7 +5,7 @@ import { BG_URL } from '../utils/constants'
 const GPTSearch = () => {
   return (
     <div>
-      <div className="absolute inset-0 -z-10 ">
+      <div className="fixed inset-0 -z-10 ">
         <img
           src={BG_URL}
           alt="background"
